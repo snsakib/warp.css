@@ -1,0 +1,17 @@
+@import './mixins';
+
+.x-padding {
+  padding: 0 1.25rem;
+
+  @include breakpointMin(md) {
+    padding: 0 3.125rem;
+  }
+
+  @include breakpointMin(lg) {
+    padding: 0 6.25rem;
+  }
+
+  @include breakpointMin(xl) {
+    padding: 0 12.5rem;
+  }
+}
