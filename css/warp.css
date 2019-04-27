@@ -1,7 +1,7 @@
 .scrollbar {
   overflow-y: scroll;
   scrollbar-width: thin;
-  scrollbar-color: black white;
+  scrollbar-color: black transparent;
 }
 .scrollbar::-webkit-scrollbar {
   width: 6px;
@@ -31,4 +31,153 @@
   .x-padding {
     padding: 0 12.5rem;
   }
+}
+
+.gradient-text {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#f9d423), to(#f83600));
+  background-image: linear-gradient(to bottom right, #f9d423 0%, #f83600 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.highlight-text {
+  font-weight: 500;
+  color: white;
+}
+
+.primary-link,
+.link-with-logo .link-text {
+  text-decoration: none;
+  color: #bfbfbf;
+  font-weight: 500;
+  padding: 0.2em 0.3em;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#f9d423), to(#f83600));
+  background-image: linear-gradient(to bottom right, #f9d423 0%, #f83600 100%);
+  background-size: 100% 0.1em;
+  background-repeat: no-repeat;
+  background-position: left 0 bottom 5%;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.primary-link:hover,
+.link-with-logo .link-text:hover {
+  background-size: 100% 100%;
+  color: #0b0d0e;
+}
+
+.bg {
+  background-image: -webkit-gradient(linear, left top, right bottom, color-stop(50%, #0b0d0e), to(#22282b));
+  background-image: linear-gradient(to bottom right, #0b0d0e 50%, #22282b 100%);
+}
+
+.primary-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 2.5rem;
+  font-size: 1.3rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: #0b0d0e;
+  border-radius: 3px;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#f9d423), to(#f83600));
+  background-image: linear-gradient(to bottom right, #f9d423 0%, #f83600 100%);
+}
+.primary-btn:hover {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#f83600), to(#f9d423));
+  background-image: linear-gradient(to bottom right, #f83600 0%, #f9d423 100%);
+}
+
+.secondary-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 1.875rem;
+  font-size: 1rem;
+  text-decoration: none;
+  border-radius: 3px;
+  letter-spacing: 1px;
+  margin: 2rem auto 0;
+  border: 1px solid darkorange;
+  color: darkorange;
+  font-weight: 400;
+}
+.secondary-btn:hover {
+  color: #bfbfbf;
+  font-weight: 500;
+  border: 1px solid transparent;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#f83600), to(#f9d423));
+  background-image: linear-gradient(to bottom right, #f83600 0%, #f9d423 100%);
+}
+
+.primary-link,
+.link-with-logo .link-text {
+  text-decoration: none;
+  color: #bfbfbf;
+  font-weight: 500;
+  padding: 0.2em 0.3em;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#f9d423), to(#f83600));
+  background-image: linear-gradient(to bottom right, #f9d423 0%, #f83600 100%);
+  background-size: 100% 0.1em;
+  background-repeat: no-repeat;
+  background-position: left 0 bottom 5%;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.primary-link:hover,
+.link-with-logo .link-text:hover {
+  background-size: 100% 100%;
+  color: #0b0d0e;
+}
+
+.link-with-logo {
+  font-size: 1.25rem;
+  text-decoration: none;
+  width: 17.5rem;
+  margin: 1.25rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.link-with-logo .link-logo {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-right: 0.625rem;
+  pointer-events: none;
+}
+.link-with-logo .link-text {
+  height: 100%;
+  padding: 0.4em 0.3em;
+  background-size: 100% 1px;
+  background-position: left 0 bottom 0;
+}
+.link-with-logo .link-text:hover {
+  color: #bfbfbf;
+}
+.link-with-logo:hover .link-text {
+  background-size: 100% 100%;
+  color: #0b0d0e;
+}
+.link-with-logo:focus {
+  outline: none;
 }
