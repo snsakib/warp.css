@@ -1,20 +1,20 @@
 .scrollbar {
-    //scrollbar styles (for firefox)
-    overflow-y: scroll;
-    scrollbar-width: thin;
-    scrollbar-color: black white;
+  //scrollbar styles (for firefox)
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: black transparent;
 
-    //scrollbar styles (for chrome)
-    &::-webkit-scrollbar {
-        width: 6px;
-    }
+  //scrollbar styles (for chrome)
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
 
-    &::-webkit-scrollbar-button {
-        display: none;
-    }
+  &::-webkit-scrollbar-button {
+    display: none;
+  }
 
-    &::-webkit-scrollbar-thumb {
-        background: black;
-        border-radius: 3.125rem;
-    }
+  &::-webkit-scrollbar-thumb {
+    background: black;
+    border-radius: 3.125rem;
+  }
 }
