@@ -1,0 +1,6 @@
+{
+  "title": "Warp.css Styleguide",
+  "source": "scss/",
+  "destination": "styleguide/",
+  "css": ["../css/main.css"]
+}

@@ -1,0 +1,92 @@
+// Gradient Text
+//
+// Styles texts with gradient color
+//
+// Markup
+// <h1 class="gradient-text">A gradient colored header</h1>
+//
+// Styleguide Components.Gradient-Text
+.gradient-text {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#f9d423), to(#f83600));
+  background-image: linear-gradient(to bottom right, #f9d423 0%, #f83600 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+// Highlight Text
+//
+// Styles texts to stand out from other contents
+//
+// Markup
+// <h1 class="highlight-text">A gradient colored header</h1>
+//
+// Styleguide Components.Highlight-Text
+.highlight-text {
+  font-weight: 500;
+  color: white;
+}
+
+.primary-link {
+  text-decoration: none;
+  color: #bfbfbf;
+  font-weight: 500;
+  padding: 0.2em 0.3em;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#f9d423), to(#f83600));
+  background-image: linear-gradient(to bottom right, #f9d423 0%, #f83600 100%);
+  background-size: 100% 0.1em;
+  background-repeat: no-repeat;
+  background-position: left 0 bottom 5%;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background-size: 100% 100%;
+    color: #0b0d0e;
+  }
+}
+
+.link-with-logo {
+  font-size: 1.25rem;
+  text-decoration: none;
+  width: 17.5rem;
+  margin: 1.25rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+
+  .link-logo {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-right: 0.625rem;
+    pointer-events: none;
+  }
+
+  .link-text {
+    @extend .primary-link;
+    height: 100%;
+    padding: 0.4em 0.3em;
+    background-size: 100% 1px;
+    background-position: left 0 bottom 0;
+
+    &:hover {
+      color: #bfbfbf;
+    }
+  }
+
+  &:hover {
+    .link-text {
+      background-size: 100% 100%;
+      color: #0b0d0e;
+    }
+  }
+
+  &:focus {
+    outline: none;
+  }
+}

@@ -13,11 +13,20 @@
     "url": "https://github.com/snsakib/warp.css/issues",
     "email": "contact@snsakib.com"
   },
-  "main": "warp.css",
+  "scripts": {
+    "compile": "sass scss/main.scss css/main.css",
+    "watch": "sass --watch scss/main.scss css/main.css",
+    "kss": "kss --config kss-config.json"
+  },
+  "main": "./css/main.css",
   "repository": {
     "type": "git",
     "url": "https://github.com/snsakib/warp.css.git"
   },
   "author": "Syed Nazmus Sakib <contact@snsakib.com> (https://www.snsakib.com)",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "kss": "^3.0.0-beta.25",
+    "michelangelo": "^0.8.0"
+  }
 }
