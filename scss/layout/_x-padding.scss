@@ -1,3 +1,14 @@
+// Horizontal Padding
+//
+// Automatically adds responsive horizontal padding.
+// Left & Right padding increases as the page width increases.
+// @extend this class only in your "html"/"body"/":host" (in Angular) selector of your .scss file
+// 
+// Markup: 
+// @import 'path-to-x-padding';
+// html { @extend .x-padding; }
+//
+// Style guide: Layout.Horizontal Padding
 @import '../utils/mixins';
 
 .x-padding {
