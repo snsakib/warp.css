@@ -1,13 +1,14 @@
-// Background Image
+// Webpage Background
 //
-// Displays a black & white linear gradient background image
+// Adds background to the webpage.
+// @extend this class only in your "html"/"body"/":host" (in Angular) selector of your .scss file
+// 
+// Markup: 
+// @import 'path-to-bg';
+// html { @extend .bg; }
 //
-// Markup
-// <section class="bg">
-//  Contents
-// </section>
-//
-// Styleguide Components.Background-Image
+// Style guide: Pages.Webpage Background 
+
 .bg {
   background-image: -webkit-gradient(linear, left top, right bottom, color-stop(50%, #0b0d0e), to(#22282b));
   background-image: linear-gradient(to bottom right, #0b0d0e 50%, #22282b 100%);
