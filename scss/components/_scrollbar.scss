@@ -1,0 +1,32 @@
+// Custom Scrollbar
+//
+// Custom scrollbar styles for webpage. Tested in Firefox & Chrome only.
+// @extend this class in the "html" / "body" selector of your .scss file
+// @extend this class in the ":host" selector of your Angular .scss file
+//
+// Markup:
+// @import 'path-to-scrollbar';
+// html { @extend .scrollbar; }
+//
+// Style guide: Components.Scrollbar
+
+.scrollbar {
+  //scrollbar styles (for firefox)
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: black transparent;
+
+  //scrollbar styles (for chrome)
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  &::-webkit-scrollbar-button {
+    display: none;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: black;
+    border-radius: 3.125rem;
+  }
+}
