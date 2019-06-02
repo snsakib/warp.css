@@ -16,7 +16,8 @@
   "scripts": {
     "compile": "sass scss/main.scss css/main.css",
     "watch": "sass --watch scss/main.scss css/main.css",
-    "kss": "kss --config kss-config.json"
+    "kss": "kss --config kss-config.json",
+    "all": "npm run compile && npm run kss"
   },
   "main": "./css/main.css",
   "repository": {
