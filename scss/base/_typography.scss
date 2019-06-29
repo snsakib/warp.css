@@ -1,3 +1,5 @@
+@import '../utils/variables';
+
 // Gradient Text
 //
 // Apply gradient colors to texts
@@ -7,8 +9,8 @@
 // Style guide: Base.Gradient Text
 
 .gradient-text {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#f9d423), to(#f83600));
-  background-image: linear-gradient(to bottom right, #f9d423 0%, #f83600 100%);
+  background-image: -webkit-gradient(linear, left top, right bottom, from($gradient-stop-1), to($gradient-stop-2));
+  background-image: linear-gradient(to bottom right, $gradient-stop-1 0%, $gradient-stop-2 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -17,14 +19,14 @@
 // Highlight Text
 //
 // Apply styles for highlighting any texts
-//
+// 
 // Markup: <h1 class="highlight-text">Highlight Text</h1>
 //
 // Style guide: Base.Highlight Text
 
 .highlight-text {
   font-weight: 500;
-  color: white;
+  color: $highlight-text-color;
 }
 
 // Primary Link
@@ -44,8 +46,7 @@
   padding: 0.2em 0.3em;
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#f9d423), to(#f83600));
-  background-image: linear-gradient(to bottom right, #f9d423 0%, #f83600 100%);
+  background: $link-underline-color;
   background-size: 100% 0.1em;
   background-repeat: no-repeat;
   background-position: left 0 bottom 5%;
@@ -53,8 +54,7 @@
   transition: all 0.3s ease-in-out;
 
   &:hover {
-    background-size: 100% 100%;
-    color: #0b0d0e;
+    background-size: 100% 40%;
   }
 }
 
@@ -107,8 +107,8 @@
 
   &:hover {
     .link-text {
-      background-size: 100% 100%;
-      color: #0b0d0e;
+      background-size: 100% 40%;
+      color: $background-color;
     }
   }
 

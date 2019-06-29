@@ -1,3 +1,5 @@
+@import '../utils/variables';
+
 // Webpage Background
 //
 // Adds background to the webpage.
@@ -10,6 +12,5 @@
 // Style guide: Pages.Webpage Background 
 
 .bg {
-  background-image: -webkit-gradient(linear, left top, right bottom, color-stop(50%, #0b0d0e), to(#22282b));
-  background-image: linear-gradient(to bottom right, #0b0d0e 50%, #22282b 100%);
+  background: $background-color;
 }
