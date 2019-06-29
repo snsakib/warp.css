@@ -1,12 +1,12 @@
 // Global Colors
+$gradient-stop-1: #ff5722;
+$gradient-stop-2: #ff1f4a;
+$gradient-stop-3: #f700ad;
+$gradient: linear-gradient(to right, $gradient-stop-1 0%, $gradient-stop-2 25%, $gradient-stop-3 100%);
 $background-color: #0b132b;
 $primary-color: #5688c7;
 $normal-text-color: #bfbfbf;
 $highlight-text-color: $primary-color;
-$link-underline-color: $primary-color;
-$gradient-stop-1: #f9d423;
-$gradient-stop-2: #f83600;
-
 
 // Brand Colors
 $mobile: #34a853;
