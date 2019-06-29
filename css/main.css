@@ -8,7 +8,7 @@
 
 .highlight-text {
   font-weight: 500;
-  color: white;
+  color: #5688c7;
 }
 
 .primary-link, .link-with-logo .link-text {
@@ -18,8 +18,7 @@
   padding: 0.2em 0.3em;
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#f9d423), to(#f83600));
-  background-image: linear-gradient(to bottom right, #f9d423 0%, #f83600 100%);
+  background: #5688c7;
   background-size: 100% 0.1em;
   background-repeat: no-repeat;
   background-position: left 0 bottom 5%;
@@ -27,8 +26,7 @@
   transition: all 0.3s ease-in-out;
 }
 .primary-link:hover, .link-with-logo .link-text:hover {
-  background-size: 100% 100%;
-  color: #0b0d0e;
+  background-size: 100% 40%;
 }
 
 .link-with-logo {
@@ -59,8 +57,8 @@
   color: #bfbfbf;
 }
 .link-with-logo:hover .link-text {
-  background-size: 100% 100%;
-  color: #0b0d0e;
+  background-size: 100% 40%;
+  color: #0b132b;
 }
 .link-with-logo:focus {
   outline: none;
@@ -80,15 +78,13 @@
   font-size: 1.3rem;
   font-weight: 500;
   text-decoration: none;
-  color: #0b0d0e;
+  color: #0b132b;
   border: none;
   border-radius: 3px;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#f9d423), to(#f83600));
-  background-image: linear-gradient(to bottom right, #f9d423 0%, #f83600 100%);
+  background: #5688c7;
 }
 .primary-btn:hover {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#f83600), to(#f9d423));
-  background-image: linear-gradient(to bottom right, #f83600 0%, #f9d423 100%);
+  cursor: pointer;
 }
 
 .secondary-btn {
@@ -101,22 +97,20 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  height: 1.875rem;
-  font-size: 1rem;
+  height: 2.5rem;
+  font-size: 1.3rem;
   text-decoration: none;
   border-radius: 3px;
   letter-spacing: 1px;
-  margin: 2rem auto 0;
-  border: 1px solid darkorange;
-  color: darkorange;
+  border: 1px solid #5688c7;
+  color: #5688c7;
   font-weight: 400;
 }
 .secondary-btn:hover {
-  color: #bfbfbf;
+  color: #0b132b;
   font-weight: 500;
   border: 1px solid transparent;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#f83600), to(#f9d423));
-  background-image: linear-gradient(to bottom right, #f83600 0%, #f9d423 100%);
+  background: #5688c7;
 }
 
 .scrollbar {
@@ -155,8 +149,7 @@
 }
 
 .bg {
-  background-image: -webkit-gradient(linear, left top, right bottom, color-stop(50%, #0b0d0e), to(#22282b));
-  background-image: linear-gradient(to bottom right, #0b0d0e 50%, #22282b 100%);
+  background: #0b132b;
 }
 
 /*# sourceMappingURL=main.css.map */
