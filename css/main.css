@@ -114,43 +114,168 @@
   background: #5688c7;
 }
 
-.scrollbar {
+.scrollbar, body {
   overflow-y: scroll;
   scrollbar-width: thin;
   scrollbar-color: black transparent;
 }
-.scrollbar::-webkit-scrollbar {
+.scrollbar::-webkit-scrollbar, body::-webkit-scrollbar {
   width: 6px;
 }
-.scrollbar::-webkit-scrollbar-button {
+.scrollbar::-webkit-scrollbar-button, body::-webkit-scrollbar-button {
   display: none;
 }
-.scrollbar::-webkit-scrollbar-thumb {
+.scrollbar::-webkit-scrollbar-thumb, body::-webkit-scrollbar-thumb {
   background: black;
   border-radius: 3.125rem;
 }
 
-.x-padding {
+.x-padding, body {
   padding: 0 1.25rem;
 }
 @media screen and (min-width: 720px) {
-  .x-padding {
+  .x-padding, body {
     padding: 0 3.125rem;
   }
 }
 @media screen and (min-width: 992px) {
-  .x-padding {
+  .x-padding, body {
     padding: 0 6.25rem;
   }
 }
 @media screen and (min-width: 1140px) {
-  .x-padding {
+  .x-padding, body {
     padding: 0 12.5rem;
   }
 }
 
-.bg {
+.bg, body {
   background: #0b132b;
+}
+
+.bg, body {
+  background: #0b132b;
+}
+
+.x-padding, body {
+  padding: 0 1.25rem;
+}
+@media screen and (min-width: 720px) {
+  .x-padding, body {
+    padding: 0 3.125rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .x-padding, body {
+    padding: 0 6.25rem;
+  }
+}
+@media screen and (min-width: 1140px) {
+  .x-padding, body {
+    padding: 0 12.5rem;
+  }
+}
+
+.scrollbar, body {
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: black transparent;
+}
+.scrollbar::-webkit-scrollbar, body::-webkit-scrollbar {
+  width: 6px;
+}
+.scrollbar::-webkit-scrollbar-button, body::-webkit-scrollbar-button {
+  display: none;
+}
+.scrollbar::-webkit-scrollbar-thumb, body::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 3.125rem;
+}
+
+body {
+  display: block;
+  position: relative;
+  height: calc(100vh - 4.375rem);
+  color: #bfbfbf;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  font-family: "Roboto", sans-serif;
+}
+@media screen and (min-width: 1024px) {
+  body {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  article {
+    width: 75%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  article {
+    width: 80%;
+  }
+}
+
+.banner-image {
+  margin-bottom: 4rem;
+  width: 100%;
+  border-radius: 3px;
+}
+
+section {
+  margin-bottom: 4rem;
+}
+section .section-header {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  color: #5688c7;
+  border-bottom: 2px solid #5688c7;
+}
+section .section-content {
+  font-size: 1.3rem;
+  line-height: 2rem;
+}
+section .section-logos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+}
+section .section-logos svg {
+  height: 4rem;
+  width: 4rem;
+}
+section .section-dl {
+  font-size: 1.3rem;
+  line-height: 2rem;
+}
+section .section-dl-term {
+  color: white;
+  font-style: oblique;
+}
+section .section-dl-description {
+  margin: 0.5rem 0 2rem;
+}
+section .section-ul {
+  font-size: 1.3rem;
+  line-height: 2rem;
+  list-style-type: disc;
+  padding: 1rem 0 0 2rem;
+}
+section a {
+  color: #bfbfbf;
 }
 
 /*# sourceMappingURL=main.css.map */
